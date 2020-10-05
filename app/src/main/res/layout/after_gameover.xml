@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AfterGameover"
+    android:background="#EDE7F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/aftergameoverpagelayout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/gameover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GAME OVER"
+                android:layout_marginTop="30dp"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/your"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gameover"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="191dp"
+                android:layout_marginLeft="191dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="your score : "
+                android:textColor="#000000"
+                android:textSize="35sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gameover"
+                android:layout_alignRight="@+id/your"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="158dp"
+                android:layout_marginRight="158dp"
+                android:layout_toEndOf="@+id/your"
+                android:layout_toRightOf="@+id/your"
+                android:gravity="center_horizontal"
+                android:text="0000"
+                android:textColor="#59000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/your"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/writename"
+                    android:layout_width="347dp"
+                    android:layout_height="43dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/aftergameoverpageedittext"
+                    android:hint=" what is your name"
+                    android:textSize="30sp"
+                    android:textCursorDrawable="@drawable/aftergameoverpageedittext_coursor" />
+
+                <Button
+                    android:id="@+id/name_completion"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#847A94" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
