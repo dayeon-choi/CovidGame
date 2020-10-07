@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ranking"
+    tools:context=".Ranking">
+
+    <Button
+        android:id="@+id/home_btn"
+        android:layout_width="70sp"
+        android:layout_height="60sp"
+        android:background="@drawable/ic_baseline_home_24"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/restart_btn"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="616dp"
+        android:background="@drawable/restart"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="616dp"
+        android:background="@drawable/home_btn"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
