@@ -3,31 +3,34 @@ package kr.hs.emirim.s2019w04.misochel;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Ranking extends AppCompatActivity {
+public class RankingActivity extends AppCompatActivity {
 
     Button homeBtn;
-    Button home_btn;
+    Button restartBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_setting);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
         homeBtn = (Button)findViewById(R.id.home_btn);
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Ranking.this, Home.class);
+                Intent i = new Intent(RankingActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
-        home_btn = (Button)findViewById(R.id.homeBtn);
-        home_btn.setOnClickListener(new View.OnClickListener() {
+        restartBtn = (Button)findViewById(R.id.restart_btn);
+        restartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Ranking.this, Home.class);
+                Intent i = new Intent(RankingActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
