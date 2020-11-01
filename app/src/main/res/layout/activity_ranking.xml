@@ -171,7 +171,6 @@
                     android:layout_marginTop="80dp"
                     android:background="@drawable/restart"
                     />
-
             </RelativeLayout>
         </LinearLayout>
     </FrameLayout>
