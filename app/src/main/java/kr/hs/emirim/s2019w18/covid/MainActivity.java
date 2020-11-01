@@ -1,4 +1,4 @@
-package kr.hs.emirim.s2019w04.covid;
+package kr.hs.emirim.s2019w18.covid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
