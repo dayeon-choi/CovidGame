@@ -1,4 +1,4 @@
-package kr.hs.emirim.s2019w04.covid;
+package kr.hs.emirim.s2019w18.covid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,6 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import kr.hs.emirim.s2019w18.covid.R;
 
 public class SettingActivity extends AppCompatActivity {
     Button homeBtn;
@@ -23,6 +21,7 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SettingActivity.this, MainActivity.class);
+                overridePendingTransition(R.anim.not_move_activity,R.anim.not_move_activity);
                 startActivity(i);
             }
         });

@@ -10,15 +10,8 @@
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="kr.hs.emirim.s2019w04.covid.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="kr.hs.emirim.s2019w04.covid.RankingActivity" />
-        <activity android:name="kr.hs.emirim.s2019w04.covid.SettingActivity" />
+        <activity android:name=".RankingActivity" />
+        <activity android:name=".SettingActivity" />
         <activity android:name=".AfterGameover" />
     </application>
 
