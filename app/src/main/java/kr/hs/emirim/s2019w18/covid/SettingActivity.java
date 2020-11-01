@@ -21,6 +21,7 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SettingActivity.this, MainActivity.class);
+                overridePendingTransition(R.anim.not_move_activity,R.anim.not_move_activity);
                 startActivity(i);
             }
         });
